@@ -47,3 +47,14 @@
 
   <audio></audio> ==> src(음악,동영상 파일 경로 지정) , preload , autoplay , loop , controls 
   <video></video> ==> width, height 
+
+
+  11. 입력양식 태그   : 사용자에게 정보를 입력받기 위한 요소 
+       - 기본 입력양식 
+       - 선택 가능한 입력 양식
+       - 입력 양식 그룹 
+
+
+  12.  구조화  
+       - 공간 분할 (div) 
+       - 시맨틱 태그       
