@@ -1,0 +1,24 @@
+li.select {
+    color:red;
+}
+
+.item {
+    color:red;
+}
+
+.header{
+    background-color: blue;
+}
+
+input[type="text"] {background: red;}
+input[type="password"] {
+    background: blue;
+}
+
+#header h1 ,  #header h2 {
+     color:red;
+}
+
+#header > h1 {color:red;}
+#section > h1 {color:blue;}
+
