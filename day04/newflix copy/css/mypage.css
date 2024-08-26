@@ -1,0 +1,55 @@
+@import "./global.css";
+
+.head {
+  font-size: 1rem;
+}
+
+.head-direction{
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.head img {
+  border-radius: 50%;
+  width: 80px;
+}
+
+.add-profile-btn {
+  background-color: gray;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+.user-profile-name{
+  padding-top: 5px;
+}
+
+/************************************************************/
+
+.continue p{
+  margin-bottom: 15px;
+}
+
+.continue{
+  display: grid;
+}
+
+.continue-list{
+  display: flex;
+}
+
+.continue-direction {
+  
+}
+
+.continue-direction span{
+  display: block;
+}
+
+.continue-list img{
+  width: 200px;
+  height: 120px;
+}
