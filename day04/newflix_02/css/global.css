@@ -4,21 +4,26 @@
 
 @import "./reset.css";
 @import "./variable.css";
+@import "./nevigation-bar.css";
 
 * {
-    /* 모든 요소를 화면 안에 포함시키겠다. */
-    box-sizing: border-box;   
+  box-sizing: border-box;
 }
-
 body {
-       background-color: var(--black);
-       color: white;
-       font-family: "Roboto", sans-serif;
-      }
-
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-purple);
+  color: white;
+}
+.display-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.position-relative {
+  position: relative;
+}
 input {
- 
-      border: none;
-      outline: none;
-      appearance: none;
+  border: none;
+  outline: none;
+  appearance: none;
 }
