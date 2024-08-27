@@ -1,0 +1,4 @@
+/* 스마트폰용 css */
+@media screen and (max-widthk:767px) {
+    body{background-color: blueviolet;}
+}
