@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ex</title>
+    <script>
+        const printName = function(){
+
+            const inputValue = document.querySelector('#name-input-box');
+            if(window.event.keyCode == 13){ //키보드 입력시 엔터를 의미하는 코드 13
+                console.log(inputValue.value);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="name-input-box" onkeydown="printName()" type="text">
+
+</body>
+</html>
