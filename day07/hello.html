@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dummy = [1,0,false];
+        alert(dummy.indexOf(0));
+        alert(dummy.indexOf(false));
+        alert(dummy.indexOf(null));
+
+        alert(dummy.includes(1));
+
+        //자바스크립트는 항등연산자로 === 사용한다.(완전항등비교)
+        //indexOf는 위치값과 실제 값까지 정확히 일치하는지를 비교한다.
+
+        /*특수 예외*/
+        const dummy1 = [NaN];//동작하지 않는 값
+        alert(dummy1.indexOf(NaN)); // -1 =>  NaN과같은 특수값은 indexOf를 이용한 완전 항등비교가 불가능. 
+        alert(dummy1.includes(NaN));// true 
+
+
+        
+
+    </script>
+</body>
+</html>
