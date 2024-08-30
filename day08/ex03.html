@@ -1,0 +1,24 @@
+<script>
+
+    //sleep 함수는 일정시간(delay) 지난 후에 콜백함수(fun)을 호출한다.
+    function sleep(fun, delay){
+
+        const delayTime = Date.now() + delay; //현재 시간을 ms(밀리세컨드) 숫자로 반환
+
+        while(Date.now() < delayTime);//원하는 시간이 지난 후에 fun() 호출함
+
+        fun();
+
+    }
+
+    function fun1(){console.log("I'm func1");}
+
+    function func2(){console.log("I'm func2");}
+
+    sleep(fun1, 3000);//3초(delay 타임) 후에 fun1 호출하여 실행 되고, 
+     func2();// 그 후에 func2 실행됨, 대기 task에서 대기하다가(block되어 있다가) 순차적으로 실행됨
+
+     // 현재 실행중인 태스크가 종료할 때까지 다음에 실행될 태스크가 대기하는 방식 
+     // => 동기 방식(synchronous) : 실행순서를 보장한다는 장점이 있으나, 앞 태스크가 종료될 때까지는 이후 태스크들이 블로킹되는 단점이 있다.
+
+</script>

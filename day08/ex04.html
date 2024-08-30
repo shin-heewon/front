@@ -1,0 +1,26 @@
+<script>
+
+    function fun1(){console.log("I'm func1");}
+
+    function func2(){console.log("I'm func2");}
+
+    //타이머 함수를 이용해서 일정시간이 지나면 콜백함수를 호출하도록 
+    //타이머 함수 : setTimeout() -> 블로킹하지 않는 성질을 가진 함수
+
+    setTimeout(fun1, 3000);
+    func2();//먼저 실행됨
+
+// 비동기 처리(asynchronous)
+// : 현재 실행 중인 태스크가 종료되지 앟는 상태라도, 다음 태스크를 곧바로 실행하는 방식, 실행 순서는 보장하지 않음
+// 비동기 처리 수행함수는 콜백 패턴을 사용한다.
+// 비동기 처리에서 발생하는 콜헬(call hell)문제를 개선하기 위해 프로미스 라는 개념이 있다.
+
+
+//비동기 처리 방식으로 동작하는 4가지
+//1. setTimeout
+//2. setInterval
+//3. HTTP 요청
+//4. 이벤트 핸들러
+
+
+</script>
