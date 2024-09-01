@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let length = ['I', 'am', 'Happy'].map(item => item.length);
+        alert(length);//1,2,5 => item을 접시처럼 생각하면 된다. 요소 하나하나의 길이를 베열 형태로 반환 해준다.
+
+
+        let length1 = [1,2,15];
+        length1.sort(); // 요소를 정렬할 때 숫자가 아닌 문자로 정렬해줌
+
+        alert(length1);
+
+        alert("2">"15");//true
+
+        function compareNumber(n1,n2){
+            if(n1 > n2) return 1;
+            if(n1 == n2) return 0;
+            if(n1 < n2) return -1;
+        }
+
+        length1.sort(compareNumber); // 1,2,15 -> compareNuber를 통한 sorting 후 숫자 정렬이 된다. 
+        alert(length1);
+
+        //문자열은 localeCompare 사용한다. 유니코드 기준 비교
+        let nation = ['Korea', 'Japan', 'America'];
+        alert(nation.sort((a,b)=>a>b?1:-1));
+        
+        alert(nation.sort((a,b)=>a.localeCompare(b)));
+        
+
+    </script>
+</body>
+</html>

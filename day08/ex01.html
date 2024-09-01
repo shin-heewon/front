@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x;
+        x = 1;
+        console.log(x); //console.log() 함수는 함수 scope 컨택스트, 전역변수인 x는 전역 컨텍스트 생성되고 각각의 컨텍스트들이 레퍼런스 하여 런타임에 실행된다.
+        //런타임 : 값 할당과 처리를 한다.
+
+        //전역변수
+        const num1 =10;
+        const num2 = 30;
+
+        //함수
+        function func1(number){//parameter
+            const num1 = 10;
+            const num2 = 20;// argument
+
+            console.log(number + num1 + num2); //130, func1에 딸려있는 지역스코프들을 합산함.
+        }
+
+        //함수(function : 직접 만든 함수) 호출
+        func1(100);
+
+        //메서드(엔진에서 미리 생성되어 있는 함수)
+        console.log(num1 + num2); //40
+
+    </script>
+</body>
+</html>

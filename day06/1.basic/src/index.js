@@ -29,6 +29,15 @@ const folderList = document.querySelectorAll('.folder');
 const completeFolderTree = function (folderList) {
     for (let i = 0; i < folderList.length; i++) {
         folderList[i].addEventListener('click', (event) => {
+
+            const child = document.getElementsByClassName('lower-folder')[i];
+
+            if(child.style.display == 'none'){
+                 child.style.display = 'block';
+            }else{
+                child.style.display = 'none';
+            }
+
             // 여기에서 작업하세요.
             console.log(event.target);
             console.log(event.target.parentNode);
